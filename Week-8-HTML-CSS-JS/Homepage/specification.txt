@@ -1,0 +1,30 @@
+HTML Tags Used (10+):
+1. a
+2. nav
+3. ul
+4. li
+5. header
+6. footer
+7. main
+8. section
+9. div
+10. form
+11. input
+12. button
+13. p
+14. h1
+15. h2
+
+CSS Properties Used (5+):
+1. background-color
+2. font-family
+3. color
+4. padding
+5. margin
+6. text-align
+
+JavaScript Usage:
+Used to add interactivity via alerts, form handling, and dynamic time display.
+
+Bootstrap Usage:
+Used Bootstrap CDN to style layout components such as buttons, forms, containers, and cards for responsive design.
