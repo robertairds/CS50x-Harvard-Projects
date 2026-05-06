@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BookTracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>📚 BookTracker</h1>
+
+    <a href="/add">➕ Add New Book</a>
+
+    <ul>
+        {% for book in books %}
+            <li>
+                <strong>{{ book["title"] }}</strong> -
+                {{ book["author"] }}
+                ({{ book["status"] }})
+
+                <form action="/delete/{{ book['id'] }}" method="post" style="display:inline;">
+                    <button type="submit">❌ Delete</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
